@@ -16,7 +16,7 @@ function setTheme(theme, persist = false) {
   themeButton.title = label;
   document.querySelector('meta[name="theme-color"]').content = isLight ? "#f4f3ee" : "#111211";
   if (persist) {
-    try { localStorage.setItem("5forge-theme", isLight ? "light" : "dark"); } catch {}
+    try { localStorage.setItem("5forge-theme-v2", isLight ? "light" : "dark"); } catch {}
   }
 }
 
